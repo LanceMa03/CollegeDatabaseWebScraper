@@ -1,2 +1,2 @@
 # CollegeDatabaseWebScraper
-Python program that fetches from colleges all across the US.
+Python program that fetches data from colleges all across the US.
