@@ -6,12 +6,23 @@ This is a web scraper made from python and the library beautiful soup. This prog
 
 ## How to Run
 
-1, Clone the GitHub repository onto your local machine <br>
-2, Open the webscrape.py file, and run it in your desired ide or python interepreter <br>
+1. Clone the GitHub repository onto your local machine <br>
+2. Open the webscrape.py file, and run it in your desired ide or python interepreter <br>
 
 ## Notes
-. If the program doesn't output data: <br>
-1, CollegeVine doesn't have data for thats specfic university <br>
-2, The name of the university/college is incorrect. <br>
+If the program doesn't output data (it will throw an error): <br>
+1. CollegeVine doesn't have data for thats specfic university <br>
+2. The name of the university/college is incorrect. You need to enter the full name of the university/college. <br>
+3. You forgot to enter "University" or "College" after the school name (Ex, "Amherst College", "Purdue University", "New York University")
 
-Ex, If I wanted to get 
+Ex, If I wanted to get statistics for these universities: <br>
+
+UC Berkeley = "University of California Berkeley" <br>
+UC Davis = "University of California Davis" <br>
+UW Seattle = "University of Washington" <br>
+Georgia Tech = "Georgia Tech Institute of Technology"
+
+
+
+
+
