@@ -11,7 +11,7 @@ This is a web scraper made from python and the library beautiful soup. This prog
 
 ## Notes
 If the program doesn't output data (it will throw an error): <br>
-1. CollegeVine doesn't have data for thats specfic university <br>
+1. CollegeVine doesn't have data for that specfic university <br>
 2. The name of the university/college is incorrect. You need to enter the full name of the university/college. <br>
 3. You forgot to enter "University" or "College" after the school name (Ex, "Amherst College", "Purdue University", "New York University")
 
