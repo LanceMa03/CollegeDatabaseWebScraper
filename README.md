@@ -6,7 +6,7 @@ This is a web scraper made from python and the library beautiful soup. This prog
 
 ## How to Run
 
-1. Clone the GitHub repository onto your local machine <br>
+1. Clone/Download the GitHub repository onto your local machine <br>
 2. Open the webscrape.py file, and run it in your desired ide or python interepreter <br>
 
 ## Notes
