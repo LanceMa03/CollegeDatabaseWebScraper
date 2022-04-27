@@ -22,7 +22,11 @@ UC Davis = "University of California Davis" <br>
 UW Seattle = "University of Washington" <br>
 Georgia Tech = "Georgia Tech Institute of Technology"
 
+## TODO
 
+1. Error Handling
+
+2. Maybe add GUI???
 
 
 
