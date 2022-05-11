@@ -24,9 +24,7 @@ Georgia Tech = "Georgia Tech Institute of Technology"
 
 ## TODO
 
-1. Error Handling
-
-2. Maybe add GUI???
+1. Add GUI???
 
 
 
