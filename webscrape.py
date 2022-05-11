@@ -7,7 +7,8 @@ import pandas as pd
 """
 * College Database
 *
-* This program allows users to enter a name of a college, and the program will display stats of that specific college/university based on CollegeVine's website.
+* This program allows users to enter a name of a college, and the program will display stats of that specific 
+* college/university based on CollegeVine's website.
 *
 * @author Lance Ma
 *
@@ -66,55 +67,81 @@ def webscrape():
             print(name.text)
             print("--------------------------------------")
 
-        name = print("Name: " + name.text)  # Displays name of college
-        location = print("Location: " + a.text)  # Displays the location of the college
+        # Displays name of college
+        print("Name: " + name.text)
 
-        publicOrPrivate = print(
-            "Public or Private: " + publicOrPrivate[0].text)  # Displays whether it's a public or private school
-        population = print("Undergraduate Population: " + undergrad[2].text)  # Displays undergraduate population
-        applicationnumbers = print(
-            "Number of Applicants: " + acceptanceRate[1].text)  # Displays the amount of applicants the college recieved
-        acceptancerate = print(
-            "Acceptance Rate: " + acceptanceRate[0].text)  # Displays the acceptance rate of the university
-        yieldrate = print("Yield Rate: " + acceptanceRate[2].text)  # Displays the yield rate of the university
-        retentionrate = print("Retention Rate: " + acceptanceRate[3].text)  # Displays the retention rate of the university
-        studenttofacultyratio = print("Student to faculty ratio: " + acceptanceRate[
-            5].text)  # Displays the student to faculty ratio of the university
+        # Prints location of college
+        print("Location: " + a.text)
+
+        # Prints whether it's a public or private school
+        print("Public or Private: " + publicOrPrivate[0].text)
+
+        # Prints undergraduate population
+        population = print("Undergraduate Population: " + undergrad[2].text)
+
+        # Prints number of applicants
+        print("Number of Applicants: " + acceptanceRate[1].text)
+
+        # Prints acceptance rate
+
+        print("Acceptance Rate: " + acceptanceRate[0].text)
+
+        # Prints the yield rate of the university
+        print("Yield Rate: " + acceptanceRate[2].text)
+
+        # Prints the retention rate of the university
+        retentionrate = print("Retention Rate: " + acceptanceRate[3].text)
+
+        # Prints the student to faculty ratio of the university
+        print("Student to faculty ratio: " + acceptanceRate[5].text)
+
         print("--------------------------------------")
-        asianDiversity = print(Diversity[0].text)  # Displays the asian population
-        blackDiversity = print(Diversity[1].text)  # Displays the black population
-        hispanicDiversity = print(Diversity[2].text)  # Displays the hispanic population
-        nativeAmericanDiversity = print(Diversity[3].text)  # Displays the native american population
-        whiteDiversity = print(Diversity[5].text)  # Displays the white population
-        otherDiversity = print(Diversity[4].text)  # Displays the "other" population
+
+        # Prints asian population
+        print(Diversity[0].text)
+
+        # Prints black population
+        print(Diversity[1].text)
+
+        # Prints hispanic population
+        print(Diversity[2].text)
+
+        # Prints native american population
+        print(Diversity[3].text)
+
+        # Prints white population
+        print(Diversity[5].text)
+
+        # Prints "other" population
+        print(Diversity[4].text)
+
         print("--------------------------------------")
         print("SAT")
-        averageSAT = print("Average SAT: " + sat[1].text)  # Displays the average SAT of the college
-        sat25to75 = print("SAT 25-75%: " + sat[2].text)  # Displays the 25th to 75th percentile of SAT scores
-        averageMathSAT = print("Average Math SAT: " + sat[4].text)  # Displays the average math SAT of the college
-        averageEnglishSAT = print(
-            "Average English SAT: " + sat[5].text)  # Displays the average reading and writing of the college
+
+        # Prints SAT/ACT stats
+        print("Average SAT: " + sat[1].text)
+        print("SAT 25-75%: " + sat[2].text)
+        print("Average Math SAT: " + sat[4].text)
+        print("Average English SAT: " + sat[5].text)
         print("--------------------------------------")
         print("ACT")
-        averageACT = print("Average ACT: " + act[6].text)  # Displays the average ACT score of the college
-        act25to75 = print("ACT 25-75%: " + act[7].text)  # Displays the average 25th to 75th percentile of ACT scores
-        averageMathACT = print("Average Math ACT: " + act[9].text)  # Displays the average math ACT of the college
-        averageEnglishACT = print(
-            "Average English ACT: " + act[10].text)  # Displays the average reading and writing ACt of the college
+        print("Average ACT: " + act[6].text)
+        print("ACT 25-75%: " + act[7].text)
+        print("Average Math ACT: " + act[9].text)
+        print("Average English ACT: " + act[10].text)
         print("--------------------------------------")
-        inStateCOA = print("In state cost: " + inStateCost[0].text)  # Displays the cost-of-attendance for in-state students
-        outOfStateCOA = print(
-            "Out of state cost: " + inStateCost[1].text)  # Displays the cost-of-attendance for out-of-state students
+        print("In state cost: " + inStateCost[0].text)
+        print("Out of state cost: " + inStateCost[1].text)
 
 
-    print("--------------------------------------")
+print("--------------------------------------")
 
-    again = input("Do you want to enter another college/university? ")
+again = input("Do you want to enter another college/university? ")
 
-    if again.lower() == "y":
-        webscrape()
-    else:
-        print("Thank you for using the college database webscraper.")
+if again.lower() == "y":
+    webscrape()
+else:
+    print("Thank you for using the college database webscraper.")
 
 
 def webscrape2():
@@ -191,101 +218,90 @@ def webscrape2():
             print("--------------------------------------")
             print(name.text)
             print("--------------------------------------")
-            name = print("Name: " + name.text)  # Displays name of college
+            # Prints name of college
+            print("Name: " + name.text)
 
-        location = print("Location: " + a.text)  # Displays location of college
-        publicOrPrivate = print("Public or Private: " + publicOrPrivate[
-            0].text)  # Displays whether the college is a public or private university
-        population = print("Undergraduate Population: " + undergrad[2].text)  # Displays undergraduate population
-        applicationnumbers = print(
-            "Number of Applicants: " + acceptanceRate[1].text)  # Displays the number of applications the college recieved
-        acceptancerate = print(
-            "Acceptance Rate: " + acceptanceRate[0].text)  # Displays the acceptance rate of the university
-        yieldrate = print("Yield Rate: " + acceptanceRate[2].text)  # Displays yield rate
-        retentionrate = print("Retention Rate: " + acceptanceRate[3].text)  # Displays retention rate
-        studenttofacultyratio = print(
-            "Student to faculty ratio: " + acceptanceRate[5].text)  # Displays the student to faculty ratio
+            # Prints location
+        print("Location: " + a.text)  # Displays location of college
+        print("Public or Private: " + publicOrPrivate[0].text)
+        print("Undergraduate Population: " + undergrad[2].text)  # Displays undergraduate population
+        print("Number of Applicants: " + acceptanceRate[1].text)  # Displays the number of applications
+        print("Acceptance Rate: " + acceptanceRate[0].text)  # Displays the acceptance rate of the university
+        print("Yield Rate: " + acceptanceRate[2].text)  # Displays yield rate
+        print("Retention Rate: " + acceptanceRate[3].text)  # Displays retention rate
+        print("Student to faculty ratio: " + acceptanceRate[5].text)  # Displays the student to faculty ratio
         print("--------------------------------------")
-        asianDiversity = print(Diversity[0].text)  # Displays the asian population
-        blackDiversity = print(Diversity[1].text)  # Displays the black population
-        hispanicDiversity = print(Diversity[2].text)  # Displays the hispanic population
-        nativeAmericanDiversity = print(Diversity[3].text)  # Displays the native american population
-        whiteDiversity = print(Diversity[5].text)  # Displays the white population
-        otherDiversity = print(Diversity[4].text)  # Displays "other" population
+        print(Diversity[0].text)  # Displays the asian population
+        print(Diversity[1].text)  # Displays the black population
+        print(Diversity[2].text)  # Displays the hispanic population
+        print(Diversity[3].text)  # Displays the native american population
+        print(Diversity[5].text)  # Displays the white population
+        print(Diversity[4].text)  # Displays "other" population
         print("--------------------------------------")
         print("SAT")
-        averageSAT = print("Average SAT: " + sat[1].text)  # Displays the average SAT of the university
-        sat25to75 = print("SAT 25-75%: " + sat[2].text)  # Displays the 25th to 75th percentile SAT scores
-        averageMathSAT = print("Average Math SAT: " + sat[4].text)  # Displays the average math SAT of the university
-        averageEnglishSAT = print(
-            "Average English SAT: " + sat[5].text)  # Displays the average reading and writing SAT of the university
+        print("Average SAT: " + sat[1].text)  # Displays the average SAT of the university
+        print("SAT 25-75%: " + sat[2].text)  # Displays the 25th to 75th percentile SAT scores
+        print("Average Math SAT: " + sat[4].text)  # Displays the average math SAT of the university
+        print("Average English SAT: " + sat[5].text)  # Displays the average reading and writing SAT of the university
         print("--------------------------------------")
         print("ACT")
-        averageACT = print("Average ACT: " + act[6].text)  # Displays the average ACT of the university
-        act25to75 = print("ACT 25-75%: " + act[7].text)  # Displays tht 25th to 75th percentile ACT scores
-        averageMathACT = print("Average Math ACT: " + act[9].text)  # Displays the average math ACT of the university
-        averageEnglishACT = print(
-            "Average English ACT: " + act[10].text)  # Displays the average reading and writing ACT score
+        print("Average ACT: " + act[6].text)  # Displays the average ACT of the university
+        print("ACT 25-75%: " + act[7].text)  # Displays tht 25th to 75th percentile ACT scores
+        print("Average Math ACT: " + act[9].text)  # Displays the average math ACT of the university
+        print("Average English ACT: " + act[10].text)  # Displays the average reading and writing ACT score
         print("--------------------------------------")
-        inStateCOA = print("In state cost: " + inStateCost[0].text)  # Displays the cost of attendance for in-state students
-        outOfStateCOA = print(
-            "Out of state cost: " + inStateCost[1].text)  # Displays the cost of attendance for out-of-state students
+        print("In state cost: " + inStateCost[0].text)  # Displays the cost of attendance for in-state students
+        print("Out of state cost: " + inStateCost[1].text)  # Displays the cost of attendance for out-of-state students
 
         for name2 in z:
             print("--------------------------------------")
             print(name2.text)
             print("--------------------------------------")
-            name2 = print("Name: " + name2.text)  # Displays name of college 2
+            print("Name: " + name2.text)  # Displays name of college 2
 
-        location2 = print("Location: " + b.text)  # Displays location of college 2
-        publicOrPrivate2 = print("Public or Private: " + publicOrPrivate2[
-            0].text)  # Displays whether the college 2 is a public or private university
-        population2 = print(
-            "Undergraduate Population: " + undergrad2[2].text)  # Displays undergraduate population of college 2
-        applicationnumbers2 = print(
-            "Number of Applicants: " + acceptanceRate2[1].text)  # Displays the number of applications college 2 recieved
-        acceptancerate2 = print("Acceptance Rate: " + acceptanceRate2[0].text)  # Displays the acceptance rate of college 2
-        yieldrate2 = print("Yield Rate: " + acceptanceRate2[2].text)  # Displays yield rate of college 2
-        retentionrate2 = print("Retention Rate: " + acceptanceRate2[3].text)  # Displays retention rate of college 2
-        studenttofacultyratio2 = print(
-            "Student to faculty ratio: " + acceptanceRate2[5].text)  # Displays the student to faculty ratio of college 2
+        print("Location: " + b.text)  # Displays location of college 2
+        print("Public or Private: " + publicOrPrivate2[0].text)  # Displays whether the college is a public or private
+        print("Undergraduate Population: " + undergrad2[2].text)  # Displays undergraduate population of college 2
+        print("Number of Applicants: " + acceptanceRate2[1].text)  # Displays the number of applications received
+        print("Acceptance Rate: " + acceptanceRate2[0].text)  # Displays the acceptance rate of college 2
+        print("Yield Rate: " + acceptanceRate2[2].text)  # Displays yield rate of college 2
+        print("Retention Rate: " + acceptanceRate2[3].text)  # Displays retention rate of college 2
+        print("Student to faculty ratio: " + acceptanceRate2[5].text)  # Displays the student to faculty ratio
         print("--------------------------------------")
-        asianDiversity2 = print(Diversity2[0].text)  # Displays the asian population
-        blackDiversity2 = print(Diversity2[1].text)  # Displays the black population
-        hispanicDiversity2 = print(Diversity2[2].text)  # Displays the hispanic population
-        nativeAmericanDiversity2 = print(Diversity2[3].text)  # Displays the native american population
-        whiteDiversity2 = print(Diversity2[5].text)  # Displays the white population
-        otherDiversity2 = print(Diversity2[4].text)  # Displays "other" population
+        print(Diversity2[0].text)  # Displays the asian population
+        print(Diversity2[1].text)  # Displays the black population
+        print(Diversity2[2].text)  # Displays the hispanic population
+        print(Diversity2[3].text)  # Displays the native american population
+        print(Diversity2[5].text)  # Displays the white population
+        print(Diversity2[4].text)  # Displays "other" population
         print("--------------------------------------")
         print("SAT")
-        averageSAT2 = print("Average SAT: " + sat2[1].text)  # Displays average SAT of college 2
-        sat25to752 = print("SAT 25-75%: " + sat2[2].text)  # Displays 25th to 75th percentile of SAT scores
-        averageMathSAT2 = print("Average Math SAT: " + sat2[4].text)  # Displays average math SAT of college 2
-        averageEnglishSAT2 = print(
-            "Average English SAT: " + sat2[5].text)  # Displays average reading and writing of college 2
+        print("Average SAT: " + sat2[1].text)  # Displays average SAT of college 2
+        print("SAT 25-75%: " + sat2[2].text)  # Displays 25th to 75th percentile of SAT scores
+        print("Average Math SAT: " + sat2[4].text)  # Displays average math SAT of college 2
+        print("Average English SAT: " + sat2[5].text)  # Displays average reading and writing of college 2
         print("--------------------------------------")
         print("ACT")
-        averageACT2 = print("Average ACT: " + act2[6].text)  # Displays average ACT of college 2
-        act25to752 = print("ACT 25-75%: " + act2[7].text)  # Displays 25th to 75th percentile of ACT scores
-        averageMathACT2 = print("Average Math ACT: " + act2[9].text)  # Displays average math SAT of college 2
-        averageEnglishACT2 = print(
-            "Average English ACT: " + act2[10].text)  # Displays average reading and writing of college 2
+        print("Average ACT: " + act2[6].text)  # Displays average ACT of college 2
+        print("ACT 25-75%: " + act2[7].text)  # Displays 25th to 75th percentile of ACT scores
+        print("Average Math ACT: " + act2[9].text)  # Displays average math SAT of college 2
+        print("Average English ACT: " + act2[10].text)  # Displays average reading and writing of college 2
         print("--------------------------------------")
-        inStateCOA2 = print(
+        print(
             "In state cost: " + inStateCost2[0].text)  # Displays the cost-of-attendance for in-state students
-        outOfStateCOA2 = print(
+        print(
             "Out of state cost: " + inStateCost2[1].text)  # Displays the cost-of-attendance for in-state students
         print("--------------------------------------")
 
-    menuChoice = input("1: Compare two colleges/universities\n2: Compare a college/university\n3: Exit\n")
 
-    if (menuChoice == "1"):
-        webscrape2()
-    elif (menuChoice == "2"):
-        webscrape()
-    else:
-        print("Thank you for using the college database webscraper")
+menuChoice = input("1: Compare two colleges/universities\n2: Compare a college/university\n3: Exit\n")
 
+if (menuChoice == "1"):
+    webscrape2()
+elif (menuChoice == "2"):
+    webscrape()
+else:
+    print("Thank you for using the college database webscraper")
 
 print("Welcome to the college database!")
 askCompare = input("Do you want to compare two universities/colleges? (Y or N) ")
